@@ -5,6 +5,8 @@ const fs = require("fs");
 //shape library
 const {Square, Circle, Triangle } = require("./lib/shapes");
 
+
+
 // Function writes the SVG file using user answers from inquirer prompts
 function writeToFile(fileName, answers) {
     let svgString = "";
@@ -39,4 +41,49 @@ function writeToFile(fileName, answers) {
     err ? console.log(err) : console.log("Generated logo.svg");
   });
 }
+
+// List of user prompts
+function promptUser() {
+    inquirer
+      .prompt([
+       
+        {
+          type: "input",
+          message:
+            "Please select up to 3 characters for your logo.",
+          name: "text",
+        },
+        // Text color prompt
+        {
+          type: "input",
+          message:
+            "Please select a color for your text.",
+          name: "textColor",
+        },
+        // Shape choice prompt
+        {
+          type: "list",
+          message: "Please select a background shape.",
+          choices: ["Triangle", "Square", "Circle"],
+          name: "shape",
+        },
+        // Shape color prompt
+        {
+          type: "input",
+          message:
+            "Please select a color for your background shape",
+          name: "shapeColor",
+        },
+      ])
+      // write to file or throw error if user did not follow prompts correctly
+      .then((answers) => {
+        if (answers.text.length > 3) {
+          console.log("Please limit your text to 3 characters");
+          promptUser();
+        } else {
+          writeToFile("logo.svg", answers);
+        }
+      });
+  }
+
 
