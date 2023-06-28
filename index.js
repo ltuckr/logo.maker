@@ -5,7 +5,7 @@ const fs = require("fs");
 //shape library
 const {Square, Circle, Triangle } = require("./lib/shapes");
 
-// run user prompts
+// run user promptsg
 promptUser();
 
 // Function writes the SVG file using user answers from inquirer prompts
