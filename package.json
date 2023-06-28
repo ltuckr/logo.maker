@@ -7,6 +7,6 @@
     "is-css3-color": "^1.0.0"
   },
   "devDependencies": {
-    "jest": "^29.5.0"
+    "jest": "^25.0.0"
   }
 }
