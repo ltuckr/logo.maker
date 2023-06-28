@@ -1,13 +1,12 @@
 {
-    "name": "svg-logo-maker",
-    "version": "0.0.1",
+  "name": "svg-logo-maker",
+  "version": "0.0.1",
   "main": "index.js",
- 
-    },
-    "dependencies": {
-        "inquirer": "^8.2.4",
-        "is-css3-color": "^1.0.0"
-      },
-      "devDependencies": {
-        "jest": "^29.5.0"
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "is-css3-color": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
+}
