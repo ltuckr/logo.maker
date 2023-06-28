@@ -23,13 +23,13 @@ function writeToFile(fileName, answers) {
   let shapeChoice;
   if (answers.shape === "Triangle") {
     shapeChoice = new Triangle();
-    svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeBackgroundColor}"/>`;
+    svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeColor}"/>`;
   } else if (answers.shape === "Square") {
     shapeChoice = new Square();
-    svgString += `<rect x="73" y="40" width="160" height="160" fill="${answers.shapeBackgroundColor}"/>`;
+    svgString += `<rect x="73" y="40" width="160" height="160" fill="${answers.shapeColor}"/>`;
   } else {
     shapeChoice = new Circle();
-    svgString += `<circle cx="150" cy="115" r="80" fill="${answers.shapeBackgroundColor}"/>`;
+    svgString += `<circle cx="150" cy="115" r="80" fill="${answers.shapeColor}"/>`;
   }
   
 // text design 
@@ -39,7 +39,7 @@ function writeToFile(fileName, answers) {
 
  //fs file generation or error log 
  fs.writeFile(fileName, svgString, (err) => {
-    err ? console.log(err) : console.log("Generated logo.svg");
+    err ? console.log(err) : console.log("Create logo.svg");
   });
 }
 
