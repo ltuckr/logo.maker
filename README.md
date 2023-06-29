@@ -17,10 +17,9 @@ An app created in Node.js that makes a customized 3 letter logo, based on user p
 You will need VS Code, Node.js, the cloned repo, the inquirer, fs, jest and markdown packages. 
 
 ## Screenshots
-
-https://gyazo.com/fd9ad0eeea9f5e5d1510d0529d1155d8
-https://gyazo.com/eb4f100746c85e487bd123de61635b0c
-https://gyazo.com/1ae50c663c690b5ecb8d7b03639c22b0
+![test](https://github.com/ltuckr/logo.maker/assets/128933116/c3550c70-4f62-4d77-9c1b-7c74ffa6cabf)
+![prompts](https://github.com/ltuckr/logo.maker/assets/128933116/c8e3c243-6078-4a77-b50f-56d2eaa1ea45)
+![logo](https://github.com/ltuckr/logo.maker/assets/128933116/89b383ab-5b9e-457c-9f8f-1be0bbd1c1b8)
 
 
 ## Walkthrough Video
@@ -39,6 +38,9 @@ https://github.com/elizabetholsavsky
 https://github.com/rmessett15/SVG-Logo-Maker
 https://github.com/Slfdspln/Logo-Maker
 https://www.w3schools.com/nodejs/nodejs_filesystem.asp
+
+## Tests
+tests were run using Jest 29.5.0
 
 
  
